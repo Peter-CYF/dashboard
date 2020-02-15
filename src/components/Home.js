@@ -28,8 +28,9 @@ export class Home extends Component {
   render() {
     const settings = {
       infinite: true,
-      //  autoplay: true,
-      speed: 1000,
+      autoplay: true,
+      autoplaySpeed: 20000,
+      speed: 3000,
       slidesToShow: 1,
       slidesToScroll: 1,
       beforeChange: (current, next) => this.changeSlide(next)
