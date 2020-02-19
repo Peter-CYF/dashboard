@@ -17,7 +17,6 @@ export function processChange(change, s) {
 }
 function setChangeUser (change, s){
     const currentUser = s.state.users.filter(user => user.bidderCode === change.currentBidder);
-    console.log('currentUser '+currentUser.id);
     if(currentUser!=null && currentUser.length > 0){
         let username = currentUser[0].forename; 
         if(currentUser[0].surname!= null && currentUser[0].surname!= undefined){
